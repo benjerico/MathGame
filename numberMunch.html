@@ -58,7 +58,8 @@
                 49, 56, 63, 64, 72, 81);
         
         function startGame(){
-            placeNums();
+            gametype();
+	    placeNums();
             myDate = new Date();
             startTime = myDate.getTime();
             timer = setTimeout("timing()", 250);
@@ -66,6 +67,10 @@
             gameQuestion();
 
         }
+	function gametype(){
+		
+}
+
         
 //This function places the numbers in the table.
 //This works by checking the nums and posib array.
