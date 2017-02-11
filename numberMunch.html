@@ -58,8 +58,7 @@
                 49, 56, 63, 64, 72, 81);
         
         function startGame(){
-            gametype();
-	    placeNums();
+    	    placeNums();
             myDate = new Date();
             startTime = myDate.getTime();
             timer = setTimeout("timing()", 250);
@@ -67,16 +66,7 @@
             gameQuestion();
 
         }
-	function gametype(){
-		
-}
 
-        
-//This function places the numbers in the table.
-//This works by checking the nums and posib array.
-//If the pass the check, ie they are not either 1 or -1, which are check off values
-//then id "#'b'" gets set to whatever the value of posib is. There are no repeats because
-//the if statement will be a not if the number in the posib array pos is -1.
         function placeNums() {
             var b = 0
             var r = Math.floor((Math.random() * 37)+1);
